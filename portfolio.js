@@ -89,26 +89,6 @@ function refresh() {
 	})
 }
 
-function textHover() {
-	if(document.getElementById("testing1").matches(':hover')) { 
-		document.getElementById("test1").style.visibility = "visible";
-	}
-	
-	if(document.getElementById("testing3").matches(':hover')) { 
-		document.getElementById("test3").style.visibility = "visible";
-	}
-	
-	if(document.getElementById("testing4").matches(':hover')) { 
-		document.getElementById("test4").style.visibility = "visible";
-	}
-}
-
-function noTextHover() {
-	document.getElementById("test1").style.visibility = "hidden";
-	document.getElementById("test3").style.visibility = "hidden";
-	document.getElementById("test4").style.visibility = "hidden";
-}
-
 function reveal() { 
 	var revealLeft = document.querySelectorAll(".revealLeft");
 	var revealRight = document.querySelectorAll(".revealRight");
@@ -136,4 +116,12 @@ window.addEventListener("scroll", reveal);
 
 function sendEmail() {
 	window.location = "mailto:t.honglin10@gmail.com";
+}
+
+function linkedin() {
+	window.open('https://www.linkedin.com/in/tan-hong-lin/', '_blank');
+}
+
+function resume() {
+	window.open('PDF/Resume_Tan Hong Lin_S10194252.pdf', '_blank');
 }
